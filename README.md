@@ -10,7 +10,8 @@ The framework is already written for you, you just need to fill in the bits wher
  - Write a route for `/count` which will accept the form submission and increment/decrement the score value
  - You will need write a simple template to display the score value and style it based on whether it's greater or less than 0.
  - Include a requirements.txt file with whatever dependencies you need.
-
+ - It should look something like this when finished
+ ![](http://i.imgur.com/faomM3C.gif)
 
 ## Please submit a Pull Request to this repository with a working version.
 
