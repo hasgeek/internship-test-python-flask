@@ -17,3 +17,5 @@ The framework is already written for you, you just need to fill in the bits wher
 ## Keep in mind
 
 Try and keep your commits messages clean, and leave comments explaining what you are doing wherever it makes sense. Also try and use meaningful variable/function names, and maintain indentation and code style.
+
+If you are facing any issues or have any clarifications, please [open an issue](https://github.com/hasgeek/internship-test-python-flask/issues) and we'll clarify.
