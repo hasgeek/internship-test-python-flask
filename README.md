@@ -1,5 +1,5 @@
 # Internship Test - Python + Flask
-A test for those applying an internship at HasGeek
+A test for those applying for an internship at HasGeek
 
 This is an Python based evaluation to test your ability to pick up the Flask framework and finish a simple website that shows you a score and allows a user to increment or decrement that score. It uses the basics of Flask, Logical Templating, form submission and GET/POST requests.
 
