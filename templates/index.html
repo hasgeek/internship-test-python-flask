@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Flask App!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- If the score value is > 0, apply a class "light-green accent-4" to this div, else apply a class "orange accent-4" -->
+    <div class="light-green accent-4">
+      <!-- Render the actual value of score here -->
+      <h1 id="score" class="white-text">Score is: 0</h1>
+    </div>
+
+    <!-- You need not worry about changing anything after this point -->
+    <div class="row">
+      <div class="col s1">
+        <form method="POST" action="/count" style="float: left;">
+          <input type="hidden" name="count" value="increment">
+          <input id="upBtn" type="submit" class="waves-effect waves-light btn-large z-depth-2" style="font-size: 2em;" value="👍">
+        </form>
+      </div>
+      <div class="col s1">
+        <form method="POST" action="/api/count" style="float: left;">
+          <input type="hidden" name="count" value="decrement">
+          <input id="downBtn" type="submit" class="waves-effect waves-light btn-large z-depth-2" style="font-size: 2em;" value="👎">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
