@@ -7,9 +7,11 @@
 <body>
   <div class="container">
     <!-- If the score value is > 0, apply a class "light-green accent-4" to this div, else apply a class "orange accent-4" -->
-    <div class="light-green accent-4">
+    <!-- class value set by 'my_style'-->
+    <div class={{ my_style }}>
       <!-- Render the actual value of score here -->
-      <h1 id="score" class="white-text">Score is: 0</h1>
+      <!-- value of score set by 'count' -->
+      <h1 id="score" class="white-text">Score is: {{ count }}</h1>
     </div>
 
     <!-- You need not worry about changing anything after this point -->
@@ -21,6 +23,7 @@
         </form>
       </div>
       <div class="col s1">
+		  <!-- changed action="api/count" to action="/count" -->
         <form method="POST" action="/count" style="float: left;">
           <input type="hidden" name="count" value="decrement">
           <input id="downBtn" type="submit" class="waves-effect waves-light btn-large z-depth-2" style="font-size: 2em;" value="👎">
@@ -30,3 +33,4 @@
   </div>
 </body>
 </html>
+
