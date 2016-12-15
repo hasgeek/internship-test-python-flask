@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 globalScore = 0
