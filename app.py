@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify, redirect
-import pprint
 
 app = Flask(__name__)
 globalScore = 0
@@ -30,4 +29,4 @@ def count():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
