@@ -6,10 +6,14 @@
 </head>
 <body>
   <div class="container">
-    <!-- If the score value is > 0, apply a class "light-green accent-4" to this div, else apply a class "orange accent-4" -->
-    <div class="light-green accent-4">
+    <!-- If the score value is >= 0, apply a class "light-green accent-4" to this div, else apply a class "orange accent-4" -->
+    {% if score>=0 %}
+      <div class="light-green accent-4">
+    {% else %}
+      <div class="orange accent-4">
+    {% endif %}
       <!-- Render the actual value of score here -->
-      <h1 id="score" class="white-text">Score is: 0</h1>
+      <h1 id="score" class="white-text">Score is: {{ score }}</h1>
     </div>
 
     <!-- You need not worry about changing anything after this point -->
